@@ -6,7 +6,7 @@
     "theme_color": "#ffd500",
     "display": "standalone",
     "orientation": "portrait",
-    "start_url": "https://app.com/climate/",
+    "start_url": "https://mysteriousmanin.github.io/climate/",
     "icons": [
         {
             "type": "image/png",
