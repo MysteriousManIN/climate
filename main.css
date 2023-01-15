@@ -1,0 +1,96 @@
+/*---- fonts ----*/
+
+@font-face{
+    font-family: 'Hero New';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://vectoricons.com/typefaces/coll/h/Hero%20New/woff/HeroNew-Regular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Hero New';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://vectoricons.com/typefaces/coll/h/Hero%20New/woff/HeroNew-Bold.woff') format('woff');
+}
+
+/*---- icons ----*/
+
+.remixicon_os20_search-2 {
+    --path: path('M 11 2 C 15.968 2 20 6.032 20 11 S 15.968 20 11 20 S 2 15.968 2 11 S 6.032 2 11 2 Z M 11 18 C 14.867 18 18 14.867 18 11 C 18 7.132 14.867 4 11 4 C 7.132 4 4 7.132 4 11 C 4 14.867 7.132 18 11 18 Z M 19.485 18.071 L 22.314 20.899 L 20.899 22.314 L 18.071 19.485 L 19.485 18.071 Z')
+}
+
+*[class^='remixicon_'], *[class*=' remixicon_'] {
+    --size: 24;
+    --color: #000;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-color: var(--color);
+    clip-path: var(--path);
+    transform: scale(calc(var(--size)/24))
+}
+
+
+
+
+:root{
+
+	--ff_p: "Hero New", Helvetica, sans-serif;
+
+	--fs_0: 8px;
+    --fs_1: 10px;
+    --fs_2: 12px;
+    --fs_3: 14px;
+    --fs_4: 16px;
+    --fs_5: 18px;
+    --fs_6: 20px;
+    --fs_7: 22px;
+    --fs_8: 24px;
+
+    --hs_0: 32px;
+    --hs_1: 24px;
+    --hs_2: 20px;
+    --hs_3: 16px;
+    --hs_4: 14px;
+    --hs_5: 10px;
+
+    --c_p: hsl(0 0% 99%);
+
+	--c_0: hsl(0 0% 96%);
+    --c_1: hsl(0 0% 86%);
+    --c_2: hsl(0 0% 80%);
+    --c_3: hsl(0 0% 92%);
+    --c_4: hsl(0 0% 50%);
+    --c_5: #ffd500;
+
+    --c_aqi-1: hsl(100 90% 50%);
+    --c_aqi-2: hsl(80 90% 50%);
+    --c_aqi-3: hsl(60 90% 50%);
+    --c_aqi-4: hsl(40 90% 50%);
+    --c_aqi-5: hsl(20 90% 50%);
+    --c_aqi-6: hsl(0 90% 50%);
+
+	--c_f0: hsl(0 0% 12%);
+
+	--c_w: #fff;
+	--c_b: #000;
+	--c_t: #0000;
+
+    --loader_svg_0: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPGc+CiAgICA8Y2lyY2xlIGN4PSI2IiBjeT0iMTIiIHI9IjIiPgogICAgICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiBkdXI9IjFzIiB2YWx1ZXM9IjA7MTswIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgYmVnaW49IjAuMSIvPgogICAgPC9jaXJjbGU+CiAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIyIj4KICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ib3BhY2l0eSIgZHVyPSIxcyIgdmFsdWVzPSIwOzE7MCIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIGJlZ2luPSIwLjIiLz4KICAgIDwvY2lyY2xlPgogICAgPGNpcmNsZSBjeD0iMTgiIGN5PSIxMiIgcj0iMiI+CiAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9Im9wYWNpdHkiIGR1cj0iMXMiIHZhbHVlcz0iMDsxOzAiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBiZWdpbj0iMC4zIi8+CiAgICA8L2NpcmNsZT4KICA8L2c+Cjwvc3ZnPg==");
+
+}
+
+html{
+    -webkit-tap-highlight-color:transparent;
+}
+
+body{
+	margin: 0;
+	background-color: var(--c_p);
+	font-family: var(--ff_p);
+	font-size: var(--fs_4);
+	color: var(--c_f0);
+}

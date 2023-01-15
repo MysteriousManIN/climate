@@ -1,0 +1,17 @@
+{
+    "name": "Climate",
+    "short_name": "Climate",
+    "description": "Check the weather at your desired location",
+    "background_color": "#fcfcfc",
+    "theme_color": "#ffd500",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "https://app.com/climate/",
+    "icons": [
+        {
+            "type": "image/png",
+            "sizes": "144x144",
+            "src": "144.png"
+        }
+    ]
+}

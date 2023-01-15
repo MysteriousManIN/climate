@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" >
+	<title>Climate</title>
+	<meta name="description" content="Check the weather at your desired location" >
+	<meta name="keyword" content="weather, climate, atmosphere" >
+	<meta name="author" content="Chetan Saini" >
+	<meta name="theme-color" content="#ffd500" >
+	<meta property="og:title" content="Climate" >
+	<meta property="og:description" content="Check the weather at your desired location" >
+	<meta property="og:image" content="thumbnail.jpg" >
+	<meta property="og:url" content="https://app.com/climate/" >
+	<meta property="og:type" content="website" >
+	<link rel="preload" as="style" href="main.css" />
+	<link rel="preload" as="script" href="https://cdn.com/google/google_jquery.min.js" />
+	<!-- <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" /> -->
+	<link rel="stylesheet" href="index.css" />
+	<script src="https://cdn.com/google/google_jquery.min.js" defer ></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script> -->
+	<script src="index.js" defer ></script>
+	<link rel="icon" href="pwa/512.png" >
+	<link rel="manifest" href="pwa/manifest.json" >
+	<script src="app.js" ></script>
+</head>
+<body>
+
+	<div class="preloader" ><span>Loading</span></div>
+	
+	<nav id="nav-bar" class="nav-bar" >
+		<div>
+			<span class="website-name" >Cli<span>mate</span></span>
+		</div>
+		<div>
+			<div id="search-bar" class="search-bar" >
+				<input type="text" placeholder="Search country or city" spellcheck="false" />
+				<button type="button" ><span class="remixicon_os20_search-2" ></span></button>
+				<div></div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+
+		<section class="section-2" >
+
+			<div class="location-box" >
+				<h2 id="main-location" >Location</h2>
+				<span id="sub-super-location" >Sub location, Super location</span>
+			</div>
+
+			<div class="cw-box" >
+				<div>
+					<div id="cw-img" class="weather-img" ></div>
+					<div><span id="cw-temp" >00</span><span>&deg; C</span></div>
+				</div>
+				<span id="cw-name" >Weather name</span>
+				<div>Feelslike <span id="cw-feelslike" >00</span><sup>&deg; C</sup></div>
+				<span id="cw-time" >Today, 00:00 AM</span>
+			</div>
+
+			<div id="cw-details" class="seven-box" >
+				<!-- <div>
+					<span>00 %</span>
+					<span>Humidty</span>
+				</div>
+				<div>
+					<span>00 mm</span>
+					<span>Precip</span>
+				</div>
+				<div>
+					<span>00 kph</span>
+					<span>Wind speed</span>
+				</div>
+				<div>
+					<span>00 <sup>&deg;</sup></span>
+					<span>Wind degree</span>
+				</div>
+				<div>
+					<span>0</span>
+					<span>UV</span>
+				</div>
+				<div>
+					<span>00 %</span>
+					<span>Cloud</span>
+				</div>
+				<div>
+					<span>00 Km</span>
+					<span>Vision</span>
+				</div> -->
+			</div>
+
+			<div class="aqi-box" >
+				<span>Air Quality Index</span>
+				<div>
+					<span id="aqi-label" >AQI Label</span>
+					<meter id="aqi-meter" min="0" max="6" value="0" ></meter>
+				</div>
+				<div>
+					<span>PM 2.5: <span id="aqi-pm2_5" >00</span></span>
+					<span>PM 10: <span id="aqi-pm10" >00</span></span>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="section-3" >
+
+			<h3>Day-Hour Forecast</h3>
+			<span id="dhf-datetime" class="hourly-datetime" >At 00:00 AM</span>
+
+			<div>
+				<div id="dhf-img" class="weather-img" ></div>
+				<div><span id="dhf-temp" >00</span><sup>&deg; C</sup></div>
+				<div>
+					<span id="dhf-name" >Weather name</span>
+					<span>Feelslike <span id="dhf-feelslike" >00</span><sup>&deg; C</sup></span>
+				</div>
+			</div>
+
+			<div id="dhf-details" class="seven-box" >
+				<!-- <div>
+					<span>00 %</span>
+					<span>Humidty</span>
+				</div>
+				<div>
+					<span>00 mm</span>
+					<span>Precip</span>
+				</div>
+				<div>
+					<span>00 kph</span>
+					<span>Wind speed</span>
+				</div>
+				<div>
+					<span>00 <sup>&deg;</sup></span>
+					<span>Wind degree</span>
+				</div>
+				<div>
+					<span>0</span>
+					<span>UV</span>
+				</div>
+				<div>
+					<span>00 %</span>
+					<span>Cloud</span>
+				</div>
+				<div>
+					<span>00 Km</span>
+					<span>Vision</span>
+				</div> -->
+			</div>
+
+			<div id="dhf-details-1" class="six-box">
+				<div></div>
+				<div>
+					<span id="sunrise" >00:00 AM</span>
+					<span>Sunrise</span>
+				</div>
+				<div>
+					<span id="sunset" >00:00 AM</span>
+					<span>Sunset</span>
+				</div>
+				<div>
+					<span id="moonrise" >00:00 AM</span>
+					<span>Moonrise</span>
+				</div>
+				<div>
+					<span id="moonset" >00:00 AM</span>
+					<span>Moonset</span>
+				</div>
+				<div>
+					<span>0 %</span>
+					<span>Rain chance</span>
+				</div>
+				<div>
+					<span>0 %</span>
+					<span>Snow chance</span>
+				</div>
+			</div>
+
+			<div id="hour-range-box" class="hour-range-box" >
+				<div></div>
+				<input id="hour-range" type="range" min="0" max="23" />
+			</div>
+
+		</section>
+
+		<section class="section-4" >
+
+			<h3>Days</h3>
+
+			<div id="day-cards" class="days-box" >
+				<!-- <button class="active" >
+					<span>Day</span>
+					<div></div>
+					<span>00/00</span>
+				</button>
+				<button>
+					<span>Day</span>
+					<div></div>
+					<span>00/00</span>
+				</button>
+				<button>
+					<span>Day</span>
+					<div></div>
+					<span>00/00</span>
+				</button>
+				<button>
+					<span>Day</span>
+					<div></div>
+					<span>00/00</span>
+				</button>
+				<button>
+					<span>Day</span>
+					<div></div>
+					<span>00/00</span>
+				</button>
+				<button>
+					<span>Day</span>
+					<div></div>
+					<span>00/00</span>
+				</button>
+				<button>
+					<span>Day</span>
+					<div></div>
+					<span>00/00</span>
+				</button> -->
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer class="footer" >
+		<div class="dac" >
+			<span>Designed & Coded by</span>
+			<span>Chetan Saini</span>
+		</div>
+	</footer>
+
+</body>
+</html>
